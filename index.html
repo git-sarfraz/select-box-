@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            select box 
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div id="store">
+                <select id="change" onchange="color()">
+                     <option value="red">Red</option>
+                     <option value="green">Green</option>
+                     <option value="blue">Blue</option>
+                     <option value="teal">Teal</option>
+                     <option value="lime">Lime</option>
+                     <option value="gold">Gold</option>
+                     <option value="orange">Orange</option>
+                </select>
+            </div>
+        <script>
+            function color(){
+                const colorchange = document.getElementById("change").value;
+                document.body.style.backgroundColor = colorchange;
+            }
+        </script>
+    </body>
+</html>
